@@ -24,7 +24,7 @@ Anchors refer to special charcters or a sequence of characters. They are used to
 
 Example of a regex pattern that can be used to match a URL:
 
-```javascript 
+``javascript 
 const urlRegex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/; 
 
 ## Quantifiers{#quantifiers}
