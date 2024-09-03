@@ -16,7 +16,7 @@ This tutorial will provide multiple in depth explanations on using Regular Expre
 - [Character Escapes](#character-escapes)
 
 
-## Anchors{#anchors}
+## Anchors {#anchors}
 Anchors refer to special charcters or a sequence of characters. They are used to specify where in the string a match should occur.
 
 1. Start Anchor ^: This asserts that the pattern must match the start of the string.
@@ -24,10 +24,10 @@ Anchors refer to special charcters or a sequence of characters. They are used to
 
 Example of a regex pattern that can be used to match a URL:
 
-``javascript 
+
 const urlRegex = /^(https?|ftp):\/\/[^\s/$.?#].[^\s]*$/; 
 
-## Quantifiers{#quantifiers}
+## Quantifiers {#quantifiers}
 Quantifiers are used to specify how many times a pattern should match. They are placed after a character, character class, or group.
 
 - *: 0 or more times.
@@ -38,10 +38,10 @@ Quantifiers are used to specify how many times a pattern should match. They are 
 - {n,m}: Between n and m times.
 
 Example of a quantifier in a regex pattern:
-```javascript
+
 const digitRegex = /\d{3}/;
 
-## Grouping Constructs{#grouping-constructs}
+## Grouping Constructs {#grouping-constructs}
 Grouping constructs in regex are used to group together one or more characters and treat them as a single unit within the expression. They are enclosed with parentheses.
 
 - (...): Capturing group
@@ -68,7 +68,7 @@ Explanation of the regex pattern:
 [aeiou]: Bracket expression that matches any single character that is either 'a', 'e', 'i', 'o', or 'u'.
 
 
-## Character Classes{#character-classes}
+## Character Classes {#character-classes}
 Character classes allow you to match a single character from a specific set of characters. With the use of character classes, you can simplify and shorten regex patterns, making them easier to understand.
 
 Example of using character classes in a regex pattern:
@@ -79,7 +79,7 @@ Explanation of the regex pattern:
 [0-9]: Character class that matches any single digit character from '0' to '9'.
 
 
-## The OR Operator{#the-or-operator}
+## The OR Operator {#the-or-operator}
 The 'or' operator is represented by the vertical bar | character. It allows you to specift multiple alternatives for a pattern to match.
 
 Example of using the 'or' | operator in a regex pattern:
@@ -89,7 +89,7 @@ Explanation of the regex pattern:
 
 apple|banana|orange: The "or" operator | allows the regex to match either "apple", "banana", or "orange".
 
-## Flags{#flags}
+## Flags {#flags}
 Flags are optional parameters that modify how the regex pattern is interpreted or applied during matching. They are modifiers that affect the behavior of regular expressions by enabling or disabling certain features and are appended to the end of the regex pattern.
 
 Some common flags used in JavaScript regex include: 
@@ -104,7 +104,7 @@ m (multiline): This flag changes the behavior of ^ and $ anchors to match the st
 
 Example: /^start/m will match "start" at the beginning of each line.
 
-## Character Escapes{character-escapes}
+## Character Escapes {character-escapes}
 Character escapes are special sequences that represent characters with special meanings or characters that are difficult to represent directly. Character escapes are an essential aspect of regex, allowing for accurate pattern matching.
 
 Some common character escapes in regex include:
