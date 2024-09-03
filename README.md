@@ -38,7 +38,7 @@ Quantifiers are used to specify how many times a pattern should match. They are 
 - {n,m}: Between n and m times.
 
 Example of a quantifier in a regex pattern:
-
+```javascript
 const digitRegex = /\d{3}/;
 
 ## Grouping Constructs{#grouping-constructs}
